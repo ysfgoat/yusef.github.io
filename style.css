@@ -1,0 +1,155 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(2020-02-26-03-07-21_M9_detail-600x600.jpg);
+    color: #fff;
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.profile-bio {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.discord-presence {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto 30px;
+    text-align: center; /* Center presence info */
+}
+
+.discord-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.presence-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.status-box {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.online {
+    background-color: #43b581;
+}
+
+.dnd {
+    background-color: #f04747;
+}
+
+.offline {
+    background-color: #747f8d;
+}
+
+.social-icons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #999;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.skills-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #000;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.skill-level {
+    background-color: #43b581;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
